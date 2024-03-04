@@ -293,6 +293,10 @@ footer{
         text-indent: 0%;
     }
 
+    .encrypt_button, .decrypt_button{
+        width: 30%;
+    }
+
     .output{
         position: relative;
         width: auto;
