@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>WhisperLock</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Logo/icon2.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body background="Logo/bg.jpg">
+        <header>
+            <div class="box">
+                <h1><img id="logo" src="Logo/encryptor_logo4.png"></h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="input">
+                <div class="input_container">
+                    <div class="text_space">
+                        <textarea name="space" cols="10" rows="8" class="main_input" id="userText" required     placeholder ="Insert your text here" spellcheck="false" onkeypress="return (event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32)"></textarea>
+                    </div>
+    
+                    <div class="info">
+                        <p><img class="exclamation" src="Logo/exclamation.svg"> Only lowercase, no accent marks or special characters</p>
+                    </div>
+    
+                    <div class="buttons" >
+                        <button onclick="btnEncrypt();"  class="encrypt_button">Encrypt</button>
+                        <button onclick="btnDecrypt();" class="decrypt_button">Decrypt</button>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="output">
+                <div class="output_container" id="output_container">
+
+                    <div class="output_message" id="output_message">
+                        <img class="img_no_found" src="Logo/no_text.png">
+                        <h1 class="alert_message">No message was found</h1>
+                        <p class="info_text">Insert the text you want to encrypt or decrypt</p>
+                    </div>
+                    <div class="output_elements">
+                        <p class="output_text" id="outText"></p>
+                        <button onclick="copy();" id="copy_button" class="copy_button" hidden>Copy!</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <a href="https://www.linkedin.com/in/erickbacilio" target="_blank" rel="noopener noreferrer"><img class="in" src="Logo/linkedin.png" alt="Linkedin"></a>
+            <a href="https://github.com/kcire31" target="_blank" rel="noopener noreferrer"><img class="gh" src="Logo/github.png" alt="Github"></a>
+            <p class="Copyright">Made by Erick Bacilio</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>

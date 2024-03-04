@@ -1,0 +1,340 @@
+body{
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-size: contain; 
+    background-color: #F3F5FC;
+ 
+}
+
+header{
+    width: 69%;
+}
+
+#logo{
+    /*position: relative;
+    top: 40px;
+    left: 40px;*/
+    width: 120px;
+    padding: 40px;
+    transition: 0.5s;
+}
+
+#logo:hover{
+    transform: scale(1.2);
+}
+
+/*
+main{
+    width: 69%;
+    display: inline-block;
+}
+*/
+
+.input{
+    display: inline-block;
+    width: 69%;
+}
+
+.main_input{
+    background-image: url(Logo/wavy_bg5.png);
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 68%; /*1440 x 1024  68%*/  /*checkar el 68% porque el tamaño de pantalla es diferente*/
+    margin-left: 18.12%;
+    margin-bottom: 8.8%; /* mar*/
+    padding: 20px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #0A3871; 
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #c6dde518;
+    text-transform:lowercase;
+    resize: none;
+}
+
+::placeholder{
+    color: #0A3871;
+    text-transform: none;
+}
+
+.info p{ /*Only lowercase and no accent marks*/
+    font-size: 20px;
+    text-indent: 23%;    
+    padding: 10px;
+    opacity: 80%;
+}
+
+.info:hover{
+    transform: scale(1.02);
+    transition: 0.2s all;
+    cursor: default;
+}
+
+.exclamation{
+    vertical-align: bottom;
+    width: 18px;
+    transition: 0.42s;
+}
+
+.info:hover .exclamation{
+    transform: scale(1.2);
+}
+
+.buttons{
+    display:flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.encrypt_button{
+    background-color: #0077b5;
+    color: white;
+}
+
+.encrypt_button:hover{
+    font-size: 17px;
+    background-color: #0077b5;
+    transform: scale(1.05);
+    border-color: #068f99;
+}
+
+.encrypt_button:active{
+    background-color: #25456d;
+}
+
+.encrypt_button, .decrypt_button{
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 16px;
+    width: 26%;
+    line-height: 19.36px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid #0077b5;
+    transition: 0.2s all;
+    cursor:pointer;
+}
+
+.decrypt_button{
+    color: #0A3871;
+}
+
+.decrypt_button:hover{
+    font-size: 17px;
+    transform: scale(1.05);
+    border-color: #068f99;
+}
+
+.decrypt_button:active{
+    background-color: #dfd9e4;
+}
+
+.output{
+    position: relative;
+    float: right;
+    width: 30%;
+}
+
+#output_container{
+    background-image: url(Logo/wavy_bg5.png);
+    display:inline-block;
+    position: absolute;
+    top: -120px;
+    height: 850px; 
+    width: 450px;
+    background-color: #ffffff9c;
+    margin-left: 50px;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    transition: 0.2s all;
+}
+
+#output_container:hover{
+    box-shadow: 0 24px 32px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.img_no_found{
+    width: 340px;
+}
+
+/*
+.img_no_found, .alert_message, .info_text{
+    text-align: center;
+    position: relative;
+    top: 250px;
+}
+*/
+
+.output_message{
+    position: relative;
+    top: 250px;
+    text-align: center;  
+}
+
+.alert_message{
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 700;
+    color: #343A40;
+}
+
+.info_text{
+    line-height: 24px;
+    color: #495057;
+}
+
+.output_text{
+    word-wrap: break-word;
+    max-height: 690px;
+    width: 400px;
+    line-height: 36px;
+    font-size: 28px;
+    color: #0A3871; 
+    margin: 40px auto;
+    padding: 1px 15px 0px 15px;
+    text-align: left;
+    overflow: auto;
+}
+
+.copy_button{
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    bottom: 50px;
+    left: 166px;
+    font-size: 16px;
+    width: 26%;
+    line-height: 19.36px;
+    padding: 14px;
+    border-radius: 24px;
+    border: 1px solid #0077b5;
+    transition: 0.2s all;
+    cursor:pointer;
+}
+
+.copy_button:hover{
+    font-size: 17px;
+    transform: scale(1.05);
+}
+
+.copy_button:active{
+    color: rgb(255, 255, 255);
+    background-color: #0077b5;
+    border-color:#0077b5;
+}
+
+.in, .gh{
+    border-radius: 10%;
+    width: 40px;
+    cursor: pointer;
+}
+
+.Copyright{
+    padding-top: 9px;
+    cursor: default;
+    font-size: 20px;
+}
+
+.Copyright:hover{
+    color: #00b579;
+}
+
+.in:hover{
+    background-color: #0077b5;
+}
+
+.gh:hover{
+    border-radius: 51%;
+    background-color: #9f62c9;
+}
+
+footer{
+    width: 67%;
+    text-align: center;
+    padding: 25px;
+}
+
+@media screen and (max-width:820px){
+    body{
+        background-size: cover; 
+    }
+    
+    header{
+        width: auto;
+    }
+
+    .input{
+        width: 100%;
+    }
+
+    .main_input{
+        width: 90%;
+        height: 260px;
+        margin-left: 0;
+        margin-bottom: 0; 
+    }
+
+    ::placeholder{
+        text-align: center;
+    }
+
+    .info p{ 
+        text-align: center;
+        padding: 10px;
+        opacity: 80%;
+        text-indent: 0%;
+    }
+
+    .output{
+        position: relative;
+        width: auto;
+        float: none;
+        padding: 10px;
+    }
+
+    #output_container{
+        display:block;
+        position: initial;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .img_no_found{
+        width: 40%;
+    }
+
+    .output_message{
+        position: initial;
+        top: 250px;
+        text-align: center; 
+    }
+
+    .output_text{
+        width: 90%;
+        font-size: 32px;
+        margin: 20px 0;
+        padding: 10px 15px 0px 15px;
+        max-height: 290px;
+        overflow-y: scroll;
+    }
+
+    .copy_button{
+        width: 30%;
+        position: initial;
+        margin: 1.5% 35%;
+    }
+
+    footer{
+        width: 100%;
+        padding: 25px 0;
+    }
+}
